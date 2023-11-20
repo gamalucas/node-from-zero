@@ -49,7 +49,7 @@ server.delete('/videos/:id', async (request, reply) => {
 
     await database.delete(videoId);
 
-    return reply.status(204).send(); 
+    return reply.status(204).send();
 })
 
 server.listen({
